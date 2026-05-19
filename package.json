@@ -2,21 +2,29 @@
   "name": "projmangement",
   "version": "1.0.0",
   "description": "project mangement application for beginner",
-  "keywords": [
-    "api",
-    "udemy",
-    "project",
-    "mangement",
-    "backend"
-  ],
-  "license": "ISC",
-  "author": "salman",
   "type": "module",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "dev": "node index.js"
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "@types/cookie-parser": "^1.4.10",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "express-async-handler": "^1.2.0",
+    "express-validator": "^7.3.2",
+    "jsonwebtoken": "^9.0.3",
+    "mailgen": "^2.0.34",
+    "mongoose": "^9.4.1",
+    "mongoose-bcrypt": "^1.11.0",
+    "nodemailer": "^8.0.7",
+    "validator": "^13.15.35"
   },
   "devDependencies": {
+    "nodemon": "^3.1.14",
     "prettier": "3.8.1"
   }
 }
